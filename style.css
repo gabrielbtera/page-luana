@@ -1,0 +1,26 @@
+body {
+  background-color: #dbded5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#menunav {
+  color: #dbded5;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  align-items: center;
+  margin: 1em;
+}
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 325px;
+  height: 100%;
+}
+
+.linknav {
+  color: #0d2f02;
+  text-decoration: none;
+  height: 100%;
+}
