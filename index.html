@@ -2,7 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
+
     <link
       href="https://fonts.googleapis.com/css?family=Inter"
       rel="stylesheet"
@@ -20,7 +26,7 @@
       </div>
     </nav>
 
-    <div class="quadros">
+    <div class="quadros" id="fale-luana">
       <div class="quadro" id="sobre-mim">
         <div id="imagem">
           <div class="sobrepor">
@@ -40,15 +46,41 @@
 
         <div class="botoes">
           <div>
-            <button class="botao">Whatsapp</button>
+            <button
+              onclick="location.href = 'www.yoursite.com';"
+              class="button"
+            >
+              Whatsapp
+            </button>
           </div>
-
+          <br />
           <div>
-            <button class="botao">Instagram</button>
+            <button class="button">Instagram</button>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="quadros" id="sobre-luana">
+      <div class="glider-contain">
+        <div class="glider">
+          <div class="imgs">
+            <img class="im" src="imagens/baner2-1.png" alt="" height="450" />
+          </div>
+
+          <div class="imgs">
+            <img class="im" src="imagens/baner2-2.png" alt="" height="450" />
+          </div>
+        </div>
+
+        <button aria-label="Previous" class="glider-prev">«</button>
+        <button aria-label="Next" class="glider-next">»</button>
+        <div role="tablist" class="dots"></div>
+      </div>
+    </div>
   </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+
   <script src="control.js"></script>
 </html>
