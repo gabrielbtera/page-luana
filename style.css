@@ -84,7 +84,8 @@ body {
 }
 
 .glider-contain {
-  width: 85%;
+  width: 90%;
+  background-color: #c7ccdf;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -128,12 +129,12 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
-  .im {
+  .imgs {
     height: 200px;
   }
 
   .glider-contain {
-    width: 95%;
+    width: 100%;
   }
 }
 
@@ -142,7 +143,7 @@ body {
     height: 180px;
   }
 
-  .glider-contain {
-    width: 100%;
+  .btn {
+    display: none;
   }
 }
