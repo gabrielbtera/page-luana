@@ -24,3 +24,84 @@ body {
   text-decoration: none;
   height: 100%;
 }
+
+#fale-comigo {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.quadros {
+  display: flex;
+  margin-top: 6rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.botao {
+  margin-top: 25px;
+}
+
+button {
+  background-color: #0d2f02;
+  border-radius: 15px;
+  border: none;
+  color: #dbded5;
+  font-size: 20px;
+  width: 250px;
+  height: 60px;
+  outline: none;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #114102;
+}
+
+.sobrepor {
+  position: absolute;
+  color: #0d2f02;
+  font-size: 20px;
+  margin-top: 225px;
+  margin-left: 60px;
+}
+
+@media only screen and (max-width: 768px) {
+  .quadros {
+    flex-direction: column;
+    margin-top: 0rem;
+    margin-right: 25px;
+  }
+
+  #fale-comigo {
+    margin-top: 0px;
+  }
+
+  #img-luana {
+    height: 400px;
+  }
+
+  .sobrepor {
+    margin-top: 140px;
+    font-size: 15px;
+  }
+
+  .botoes {
+    margin-top: 0px;
+  }
+
+  button {
+    width: 300px;
+  }
+}
