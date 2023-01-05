@@ -140,6 +140,7 @@ body {
   display: flex;
   align-items: flex-end;
   justify-content: end;
+  margin-right: 30px;
   gap: 5px;
 }
 
