@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
 
-    <link
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"
       rel="stylesheet"
-    />
+    /> -->
     <link rel="stylesheet" href="style.css" />
 
     <link
@@ -27,7 +27,7 @@
     </nav>
 
     <div class="quadros" id="fale-luana">
-      <div class="quadro" id="sobre-mim">
+      <div class="quadro" id="">
         <div id="imagem">
           <div class="sobrepor">
             <h1 id="atras">
@@ -47,46 +47,72 @@
         <div class="botoes">
           <div>
             <button
-              onclick="location.href = 'www.yoursite.com';"
               class="button"
+              onclick="window.open('https://wa.me/5579998348340?text=Ol%C3%A1%2C+Luana.+Vi+seu+perfil+e+quero+saber+como+fa%C3%A7o+para+marcar+uma+consulta.', '_blank')"
             >
               Whatsapp
             </button>
           </div>
           <br />
           <div>
-            <button class="button">Instagram</button>
+            <button
+              class="button"
+              onclick="window.open('https://www.instagram.com/fisio.luanam/', '_blank')"
+            >
+              Instagram
+            </button>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="glider-contain">
-      <div class="glider">
-        <div class="imgs">
-          <img id="im1" src="imagens/baner2-1.png" alt="" height="400" />
+    <div class="glider" id="sobre-luana">
+      <div class="slide">
+        <div class="icons">
+          <img
+            src="imagens/icons8-instagram 1.png"
+            alt=""
+            onclick="window.open('https://www.instagram.com/fisio.luanam/', '_blank')"
+          />
+          <img
+            src="imagens/icons8-whatsapp.png"
+            alt=""
+            onclick="window.open('https://wa.me/5579998348340?text=Ol%C3%A1%2C+Luana.+Vi+seu+perfil+e+quero+saber+como+fa%C3%A7o+para+marcar+uma+consulta.', '_blank')"
+          />
+        </div>
+        <div class="imgs" id="im1">
+          <img src="imagens/baner2-1.png" alt="" height="400" />
         </div>
 
-        <div class="imgs">
+        <div class="" id="im2">
           <img
-            class="im"
-            id="im2"
-            src="imagens/baner2-2.png"
-            alt=""
-            height="400"
+            src="imagens/baner2-1-r.png"
+            alt="Reabilitação Fisioterapêutica, Recovery Esportivo, Terapia Manual, Dry needling e pilates. Atendimento Domiciliar"
+            height="375"
+            width="375"
           />
         </div>
       </div>
 
-      <button aria-label="Previous" class="glider-prev">«</button>
-      <button aria-label="Next" class="glider-next">»</button>
-      <div role="tablist" class="dots"></div>
+      <div class="grid-container" id="">
+        <div class="item1">
+          <h1 class="fisio" id="fcima">FISIOTE</h1>
+          <h1 class="fisio">RAPEUTA</h1>
+        </div>
+
+        <div class="item3"><h1>FISIOTERAPEUTA</h1></div>
+        <div class="item2">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of
+        </div>
+      </div>
     </div>
-
-    <div class="quadros" id="sobre-luana"></div>
   </body>
-
-  <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
 
   <script src="control.js"></script>
 </html>

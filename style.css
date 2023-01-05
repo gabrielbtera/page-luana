@@ -1,6 +1,7 @@
 body {
   background-color: #dbded5;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
 #menunav {
@@ -69,6 +70,12 @@ body {
   background-color: #114102;
 }
 
+#imagem {
+  display: flex;
+  align-items: center;
+  background-color: none;
+}
+
 .sobrepor {
   position: absolute;
   color: #0d2f02;
@@ -77,21 +84,63 @@ body {
   margin-left: 60px;
 }
 
-.imgs {
+.glider {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.slide {
+  background-color: #c7ccdf;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.glider-contain {
-  width: 90%;
-  background-color: #c7ccdf;
+#im1 {
+  display: flex;
 }
 
-@media only screen and (max-width: 1000px) {
-  .im {
-    height: 400px;
-  }
+#im2 {
+  display: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "menu main";
+  gap: 10px;
+  max-width: 600px;
+  margin-top: 50px;
+}
+
+.fisio {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  margin: 0;
+}
+
+.item2 {
+  margin-top: 15px;
+  text-align: justify;
+}
+
+.item3 {
+  display: none;
+}
+
+#fcima {
+  margin-top: 25px;
+}
+
+.icons {
+  width: 500px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+  gap: 5px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -113,24 +162,82 @@ body {
     height: 400px;
   }
 
+  #sobre-mim,
+  #fale-luana {
+    background-color: #dbded5;
+    width: 100%;
+  }
+
   .sobrepor {
     margin-top: 140px;
-    margin-left: 80px;
+    margin-left: 45px;
     font-size: 15px;
   }
 
   .botoes {
-    margin-top: 5pxpx;
+    margin-top: 5px;
   }
 
   .button {
     width: 300px;
   }
+
+  #fale-comigo {
+    margin: 0;
+    margin-top: 25px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
+  .icons {
+    width: 100%;
+  }
   .imgs {
     height: 200px;
+  }
+
+  .quadros {
+    margin: 0;
+  }
+  #im2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #fale-comigo {
+    margin: 0;
+    margin-top: 25px;
+  }
+
+  #imagem {
+    background-color: #c7ccdf;
+    width: 100%;
+  }
+
+  #im1 {
+    display: none;
+  }
+
+  .grid-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .item2 {
+    text-align: center;
+    margin-top: 0;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  .item3 {
+    display: flex;
+  }
+  .item1 {
+    display: none;
   }
 
   .glider-contain {
