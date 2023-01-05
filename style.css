@@ -199,6 +199,7 @@ body {
   .quadros {
     margin: 0;
   }
+
   #im2 {
     display: flex;
     justify-content: center;
@@ -240,17 +241,11 @@ body {
     display: none;
   }
 
+  .botoes {
+    margin-top: 25px;
+  }
+
   .glider-contain {
     width: 100%;
-  }
-}
-
-@media only screen and (max-width: 322px) {
-  .im {
-    height: 180px;
-  }
-
-  .btn {
-    display: none;
   }
 }

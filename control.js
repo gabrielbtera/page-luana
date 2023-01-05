@@ -11,7 +11,7 @@ function falar() {
   divFaleComigo.style.display = "flex";
 }
 
-falarSobre();
+falar();
 
 function falarSobre() {
   fale.style.color = "#0d2f02";
